@@ -17,7 +17,7 @@ import {
   Legend,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
-import { flexbox } from "@mui/system";
+
 
 const Search = () => {
   const [country, setCountry] = useState("");
@@ -56,10 +56,10 @@ const Search = () => {
 
     await axios.get(`${process.env.REACT_APP_USE_KEY}`).then((response) => {
       const filteredConfirmed = response.data.filter(
-        (obj) => obj.countryRegion == event.target.value
+        (obj) => obj.countryRegion === event.target.value
       );
       const filteredDeaths = response.data.filter(
-        (obj) => obj.countryRegion == event.target.value
+        (obj) => obj.countryRegion === event.target.value
       );
       setAllData({
         ...allData,
