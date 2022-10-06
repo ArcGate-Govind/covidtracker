@@ -3,17 +3,21 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding-top: 30px;
-
-
+}
+.card-title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card-subtitle{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.date{
+    color: blue;
+    font-size:medium;
+    font-weight: 300;
 }
 
-.main_div{
-    display: flex;
-    justify-content: space-around;
-align-items: center;
-padding-top: 60px;
 
-}
+
 
 
 
